@@ -14,12 +14,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate stats card
+      - name: Generate dracula card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true
-          path: profile/stats.svg
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=dracula
+          path: profile/stats_dracula.svg
+          token: ${{ secrets.PAT }}
+
+      - name: Generate synthwave card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=synthwave
+          path: profile/stats_synthwave.svg
+          token: ${{ secrets.PAT }}
+
+      - name: Generate cobalt card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=cobalt
+          path: profile/stats_cobalt.svg
+          token: ${{ secrets.PAT }}
+
+      - name: Generate tokyonight card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight
+          path: profile/stats_tokyonight.svg
           token: ${{ secrets.PAT }}
 
       - name: Commit cards
