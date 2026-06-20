@@ -7,7 +7,7 @@ Full-Stack Engineer · AI Researcher · Independent Builder
 
 🚀 Building products across AI, Web, Mobile, and Games
 
-🌐 Portfolio: [rosszhu.org](rosszhu.org)
+🌐 Portfolio: [rosszhu.org](https://rosszhu.org)
 
 ---
 
