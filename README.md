@@ -26,6 +26,8 @@ My interests span:
 
 I enjoy working at the intersection of research and engineering, transforming cutting-edge ideas into real-world applications.
 
+https://afdian.com/a/rosszhu
+
 ---
 
 
