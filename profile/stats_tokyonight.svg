@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">RossZhu's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 72, Total Commits  (last year) : 1056, Total PRs: 211, Total Issues: 1, Contributed to (last year): 8</desc>
+        <desc id="descId">Total Stars Earned: 72, Total Commits  (last year) : 1057, Total PRs: 211, Total Issues: 1, Contributed to (last year): 8</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 71.71463114594158;
+        stroke-dashoffset: 71.70842500778784;
       }
     }
   
