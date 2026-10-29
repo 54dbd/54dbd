@@ -2,7 +2,7 @@ name: Update README cards
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "0 3 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -45,6 +45,15 @@ jobs:
           options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight
           path: profile/stats_tokyonight.svg
           token: ${{ secrets.PAT }}
+
+      - name: Fail if a card is an error placeholder
+        run: |
+          # The action writes an error SVG instead of failing when the token is rejected,
+          # which would overwrite the last good card. Stop before committing in that case.
+          if grep -l "Something went wrong" profile/stats_*.svg; then
+            echo "::error::A stats card is an error placeholder (check the PAT secret). Keeping the previous cards."
+            exit 1
+          fi
 
       - name: Commit cards
         run: |
